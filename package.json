@@ -1,5 +1,5 @@
 {
-  "name": "reddit-clone",
+  "name": "nediverse",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -58,12 +58,15 @@
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
     "react-hook-form": "^7.44.2",
+    "react-particles": "^2.11.0",
     "react-textarea-autosize": "^8.4.1",
+    "react-tsparticles": "^2.11.0",
     "server-only": "^0.0.1",
     "sharp": "^0.32.1",
     "tailwind-merge": "^1.13.2",
     "tailwindcss": "3.3.2",
     "tailwindcss-animate": "^1.0.6",
+    "tsparticles": "^2.11.0",
     "typescript": "5.0.4",
     "uploadthing": "^4.0.0",
     "zod": "^3.21.4"

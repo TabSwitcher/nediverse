@@ -36,6 +36,127 @@
     --radius: 0.5rem;
   }
 
+  .from-dark-charcoal {
+    --gradient-from: #323232;
+  }
+
+  .to-outer-space {
+    --gradient-to: #3D4E5A;
+  }
+
+  .bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right, var(--gradient-from), var(--gradient-to));
+  }
+  
+  @keyframes typing {
+    0% { content: ""; }
+    10% { content: "Y"; }
+    20% { content: "Yo"; }
+    30% { content: "You"; }
+    40% { content: "Your"; }
+    50% { content: "Your "; }
+    60% { content: "Your F"; }
+    70% { content: "Your Fe"; }
+    80% { content: "Your Fee"; }
+    90% { content: "Your Feed"; }
+    100% { content: "Your Feed"; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "Your Feed";
+    animation: typing 4s steps(10, end) infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+  
+    .typewriter::before {
+      content: "Your Feed";
+      animation: none;
+    }
+  }
+
+  /* NEDverse */
+
+  @keyframes typing2 {
+    0% { content: ""; }
+    10% { content: "N"; }
+    20% { content: "NE"; }
+    30% { content: "NED"; }
+    40% { content: "NEDv"; }
+    50% { content: "NEDve"; }
+    60% { content: "NEDver"; }
+    70% { content: "NEDvers"; }
+    80% { content: "NEDverse"; }
+    90% { content: "NEDverse"; }
+    100% { content: "NEDverse"; }
+  }
+  
+  @keyframes blink2 {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter2 {
+    --caret: currentcolor;
+  }
+  
+  .typewriter2::before {
+    content: "NEDverse";
+    animation: typing2 4s steps(10, end) infinite;
+  }
+  
+  .typewriter2::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink2 0.5s linear infinite;
+  }
+  
+  .typewriter2.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter2.nocaret::after {
+    border-right: 0;
+  }
+  
+  @media (prefers-reduced-motion) {
+    .typewriter2::after {
+      animation: none;
+    }
+  
+    .typewriter2::before {
+      content: "NEDverse";
+      animation: none;
+    }
+  }
+ 
+
   .dark {
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
@@ -67,7 +188,11 @@
     --ring: 216 34% 17%;
 
     --radius: 0.5rem;
+    
+ 
   }
+
+
 }
 
 @layer base {

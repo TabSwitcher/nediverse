@@ -39,9 +39,9 @@ const page = async ({ params }: PageProps) => {
   if (!community) return notFound();
 
   return <>
-    <h1 className="font-bold text-3xl md:text-4xl h-14">
-        ned/{community.name}
-    </h1>
+    <div className="flex items-center py-4 px-1 font-bold text-3xl md:text-4xl h-14" style={{padding:60, justifyContent: 'center'}}>
+        <h1>ned/{community.name}</h1>
+    </div>
     <MiniCreatePost session={session}/>
 
     {/* TODO: Show posts in user feed */}

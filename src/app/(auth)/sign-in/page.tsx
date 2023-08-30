@@ -13,10 +13,10 @@ const page: FC = () => {
           href='/'
           className={cn(
             buttonVariants({ variant: 'ghost' }),
-            'self-start -mt-20'
+            'self-start -mt-20 group'
           )}>
 
-          <ChevronLeft className='mr-2 h-4 w-4'/>Home
+          <ChevronLeft className='mr-2 h-4 w-4 text-white group-hover:text-black'/><span className='text-white group-hover:text-black'>Home</span>
         </Link>
 
         <SignIn />

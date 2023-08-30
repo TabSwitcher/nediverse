@@ -32,6 +32,7 @@ const Editor: FC<EditorProps> = ({ communityId }) => {
     },
   });
 
+
   const ref = useRef<EditorJS>();
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const _titleRef = useRef<HTMLTextAreaElement>(null);
@@ -180,7 +181,7 @@ const Editor: FC<EditorProps> = ({ communityId }) => {
   //by default react hook forms take the refs. we can't use a custom ref, so we share the ref with the textarea and the register function from react hook forms
   //so we separate the ref and pass the ref to react hook form, and we also want our ref so we pass titleRef.current to e to focus on title
   return (
-    <div className="w-full p-4 bg-zinc-50 rounded-lg border border-zinc-200">
+    <div className="w-full p-4 bg-zinc-50 rounded-lg border border-zinc-200 text-black">
       <form
         id="community-post-form"
         className="w-fit"

@@ -50,7 +50,7 @@ const Post: FC<PostProps> = ({ communityName, post, commentAmt, votesAmt, curren
                     {post.title}
                 </h1>
             </a>
-            <div className='relative text-sm max-h-40 w-full overflow-clip' ref={pRef}>
+            <div className='relative text-sm max-h-40 text-black w-full overflow-clip' ref={pRef}>
 
                 <EditorOutput content={post.content}/>
                 {pRef.current?.clientHeight === 160 ? (
@@ -62,7 +62,7 @@ const Post: FC<PostProps> = ({ communityName, post, commentAmt, votesAmt, curren
       </div>
 
 
-      <div className='bg-gray-50 z-20 text-sm p-4 sm:px-6'>
+      <div className='bg-gray-50 text-black z-20 text-sm p-4 sm:px-6'>
       <a className='w-fit flex items-center gap-2' href={`/ned/${communityName}/post/${post.id}`}>
                <MessageSquare className='h-4 w-4' /> {commentAmt} comments
             </a>
